@@ -1,12 +1,27 @@
 import { fastify } from "fastify";
+import { DatabaseMemory } from "./database-memory.js";
 
 const server = fastify();
 
-server.get("/", () => {
-  return "Ola mundo ";
+const database = new DatabaseMemory();
+
+server.post("/videos", () => {
+  database.create({
+    title: "Video 01",
+    description: "Esse é o video 01",
+    duration: 100,
+  });
 });
 
-server.get("/hello", () => {
+server.get("/videos", () => {
+  return "Heloo";
+});
+
+server.put("/videos/id", () => {
+  return "Heloo";
+});
+
+server.delete("/videos/id", () => {
   return "Heloo";
 });
 
