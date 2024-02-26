@@ -45,13 +45,13 @@ server.put("/videos/:id", async (request, reply) => {
 server.delete("/videos/:id", async (request, reply) => {
   const videoId = request.params.id;
 
- await database.delete(videoId);
+  await database.delete(videoId);
 
   return reply.status(204).send();
 });
 
 server.listen({
-  port: 3031,
+  port: process.env.PORT ?? 3031,
 });
 
 /* import { createServer } from "node:http";
