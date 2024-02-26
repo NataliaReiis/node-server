@@ -1,0 +1,26 @@
+POST http://localhost:3031/videos
+Content-Type: application/json
+
+{
+    "title": "Video 01",
+    "description":  "Esse é o primeiro video mano",
+    "duration": 100
+}
+
+###
+GET http://localhost:3031/videos
+
+###
+
+PUT http://localhost:3031/videos/7aa29a76-f27e-4a63-a659-7a2d5654001b
+Content-Type: application/json
+
+{
+    "title": "Video 10",
+    "description":  "ola mundo",
+    "duration": 100
+}
+
+###
+
+DELETE http://localhost:3031/videos/7aa29a76-f27e-4a63-a659-7a2d5654001b
