@@ -1,5 +1,5 @@
 
-POST http://localhost:3031/videos
+POST https://node-server-q4zo.onrender.com/videos
 Content-Type: application/json
 
 {
@@ -9,19 +9,19 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3031/videos
+GET https://node-server-q4zo.onrender.com/videos
 
 ###
 
-PUT http://localhost:3031/videos/1a7496ec-9675-4288-97ec-6cf323c2bcae
+PUT https://node-server-q4zo.onrender.com/videos/ab53b7a3-031a-443d-be3d-7691bde8069d
 Content-Type: application/json
 
 {
-    "title": "Video 10",
+    "title": "Video novo",
     "description":  "ola mundo",
     "duration": 100
 }
 
 ###
 
-DELETE http://localhost:3031/videos/1a7496ec-9675-4288-97ec-6cf323c2bcae
+DELETE https://node-server-q4zo.onrender.com/videos/1a7496ec-9675-4288-97ec-6cf323c2bcae
